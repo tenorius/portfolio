@@ -1,0 +1,12 @@
+.logo{
+    width: 57px;
+    height: 57px;
+    overflow: hidden;
+    padding: 8px;
+    display: inline-block;
+}
+
+.logo img {
+    height: 100%;
+    width: auto;
+}

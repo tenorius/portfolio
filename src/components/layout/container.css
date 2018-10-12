@@ -1,0 +1,9 @@
+.container {
+    height: auto;
+    min-height: 566px;
+    padding-bottom: 58px;
+    position: relative;
+    overflow: hidden;/*evita probelmas de float*/
+    z-index: 1;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
