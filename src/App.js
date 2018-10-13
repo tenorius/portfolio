@@ -7,15 +7,22 @@ import Page from "./components/layout/page"
 import "./components/layout/page.css"
 import HomePage from "./components/home/homePage";
 import Background from "./components/layout/background";
+import { Switch, Route, Redirect } from 'react-router-dom';
+import AboutPage from "./components/home/aboutPage";
+
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Navbar/>
-        <Page>
-          <HomePage/>
-        </Page>
-        <Background/>
+          <Navbar/>
+          <Page>
+              <Switch>
+                  <Route path="/home" component={HomePage}/>
+                  <Route path="/about" component={AboutPage}/>
+                  <Redirect from="/" to="/home"/>
+              </Switch>
+
+          </Page>
         {/*<header className="App-header">*/}
           {/*<img src={logo} className="App-logo" alt="logo" />*/}
           {/*<p>*/}
