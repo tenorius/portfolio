@@ -1,4 +1,7 @@
 import React, {Component, Fragment} from 'react'
+import {connect} from  'react-redux';
+import {bindActionCreators} from 'redux';
+import * as actions from '../../redux/actions/appActions';
 import Container from "../layout/container";
 import Background from "../layout/background";
 import SpellingBee from "../utils/spellingBee";
@@ -11,7 +14,8 @@ class HomePage extends Component {
   
   componentDidMount() {
     setTimeout(() => {
-      this.setState({init: true})
+      // this.setState({init: true});
+      this.props.actions.toggleLoading(false);
     }, 300)
   }
   
@@ -22,14 +26,14 @@ class HomePage extends Component {
   render() {
     return (
       <Fragment>
-        <Container init={this.state.init}
+        <Container init={!this.props.app.isLoading}
                    delay={300}
                    styleClass="home-page">
           <div className="text-zone">
-            <SpellingBee init={this.state.init}
+            <SpellingBee init={!this.props.app.isLoading}
                          delay={300}
                          text="Hi,*I'm Tenorio,*web developer" cssClass="blast" tag="h1"/>
-            <Transition init={this.state.init}
+            <Transition init={!this.props.app.isLoading}
                         delay={2600}>
               <h2>Front End Developer / WordPress / Angular JS</h2>
               <a className="flat-button" onClick={this.handleClick}>
@@ -44,4 +48,16 @@ class HomePage extends Component {
   }
 }
 
-export default HomePage;
+const mapStateToProps = (state, ownProps) => {
+  return {
+    app: state.app,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    actions: bindActionCreators(actions, dispatch),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(HomePage);

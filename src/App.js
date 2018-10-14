@@ -21,7 +21,7 @@ class App extends Component {
             <Redirect from="/" to="/home" />
           </Switch>
         </Page>
-        {/*<Preloader />*/}
+        <Preloader />
       </div>
     );
   }

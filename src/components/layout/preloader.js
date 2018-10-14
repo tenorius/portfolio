@@ -1,27 +1,23 @@
 import React, { Component } from 'react';
 import { withRouter } from "react-router";
+import {connect} from  'react-redux';
+import {bindActionCreators} from 'redux';
+import * as actions from '../../redux/actions/appActions';
 import './preloader.css';
 
 class Preloader extends Component {
   
   state = { isLoading: false };
   
-  componentDidUpdate = prevProps => {
+  componentDidUpdate(prevProps) {
     if (this.props.location !== prevProps.location) {
-      this.clearTimer();
-      this.setState({ isLoading: true }, () => this.setTimer());
+      this.props.actions.toggleLoading(true);
     }
-  };
-  
-  clearTimer = () => clearTimeout(this.timeout);
-  
-  timer = () => this.setState({ isLoading: false }, () => this.clearTimer());
-  
-  setTimer = () => (this.timeout = setTimeout(this.timer, 3000));
+  }
   
   render() {
     let styles = {
-      display: this.state.isLoading ? 'block' : 'none'
+      display: this.props.app.isLoading ? 'block' : 'none'
     };
     return <div className="preloader" style={styles}>
     
@@ -29,5 +25,17 @@ class Preloader extends Component {
   }
 }
 
+const mapStateToProps = (state, ownProps) => {
+  return {
+    app: state.app,
+  };
+};
 
-export default withRouter(Preloader);
+const mapDispatchToProps = (dispatch) => {
+  return {
+    actions: bindActionCreators(actions, dispatch),
+  };
+};
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Preloader))
+
