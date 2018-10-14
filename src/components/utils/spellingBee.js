@@ -5,7 +5,6 @@ class SpellingBee extends Component {
   
   
   state = {
-    started: false,
     letters: new Array(this.props.text.split("").length)
   };
   
@@ -44,9 +43,18 @@ class SpellingBee extends Component {
     let CustomTag = tag;
     let textArray = text.split("");
     let elementsArray = textArray.map((char, index) => {
-        return char === '*' ? <br key={index}/> : (
-          <span key={index} ref={(ref) => this.letters[index] = ref}
-                className={[cssClass, this.state.letters[index]].join(" ")}>{char}</span>)
+        switch (char) {
+          case '*':
+            return <br key={index} />;
+          case  ' ':
+            return <span key={index}>&nbsp;</span>;
+          default:
+            return (
+              <span key={index} ref={(ref) => this.letters[index] = ref}
+                    className={[cssClass, this.state.letters[index]].join(" ")}>{char}
+                  </span>
+            )
+        }
       }
     );
     let speltElement = (

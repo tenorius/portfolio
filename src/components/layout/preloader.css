@@ -6,8 +6,40 @@
     left: 0;
     bottom: 0;
     right: 0;
+    display: none;
     /*background: #252627;*/
-    background: gold;
+    background: #252627;
     z-index: 2;
     overflow: hidden;
+}
+
+.preloader .inner{
+    position: absolute;
+    height: 160px;
+    width: 80%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /*background: #252627;*/
+    background: #252627;
+    text-align: center;
+}
+
+.preloader span{
+    color: #8d8d8d;
+    margin-top: 9px;
+    font-size: 9px;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.preloader .progress {
+    width: 160px;
+    height: 1px;
+    margin: 0 auto;
+    background: gold;
 }
