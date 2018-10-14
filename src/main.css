@@ -61,3 +61,10 @@
     float: left;
     border-radius: 3px;
 }
+
+
+/*transitions and animations*/
+
+.red {
+    color: red!important;
+}
