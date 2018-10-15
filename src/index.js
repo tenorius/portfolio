@@ -7,6 +7,7 @@ import configureStore from './redux/store/configureStore';
 import './index.css';
 import './normalize.css';
 import App from './App';
+import initialState from './redux/reducers/initialState';
 import * as serviceWorker from './serviceWorker';
 
 WebFont.load({
@@ -15,7 +16,7 @@ WebFont.load({
   },
 });
 
-const store = configureStore();
+const store = configureStore(initialState);
 
 ReactDOM.render(
   <Provider store={store}>

@@ -1,35 +1,34 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-import './nav.css'
+import React from 'react';
+import './nav.css';
 
-const Nav = () => (
-    <nav className="nav">
-        <Link to="/home">
-            <i className="material-icons">
-                home
-            </i>
-        </Link>
-        <Link to="/about">
-            <i className="material-icons">
-                person
-            </i>
-        </Link>
-        <Link to="">
-            <i className="material-icons">
-                settings
-            </i>
-        </Link>
-        <Link to="">
-            <i className="material-icons">
-                album
-            </i>
-        </Link>
-        <Link to="">
-            <i className="material-icons">
-                email
-            </i>
-        </Link>
-    </nav>
+const Nav = props => (
+  <nav className="nav">
+    <a onClick={() => (props.goTo('/home'))}>
+      <i className="material-icons">
+        home
+      </i>
+    </a>
+    <a onClick={() => (props.goTo('/about'))}>
+      <i className="material-icons">
+        person
+      </i>
+    </a>
+    <a href="/">
+      <i className="material-icons">
+        settings
+      </i>
+    </a>
+    <a href="/">
+      <i className="material-icons">
+        album
+      </i>
+    </a>
+    <a href="/">
+      <i className="material-icons">
+        email
+      </i>
+    </a>
+  </nav>
 );
 
 export default Nav;

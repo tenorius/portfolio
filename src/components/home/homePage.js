@@ -10,13 +10,13 @@ import Transition from "../utils/transition";
 
 class HomePage extends Component {
   
-  await = 2000;
+  await = 300;
   
   componentDidMount() {
-    setTimeout(() => {
-      // this.setState({init: true});
-      this.props.actions.toggleLoading(false);
-    }, this.await)
+    // setTimeout(() => {
+    //   // this.setState({init: true});
+    //   this.props.actions.toggleLoading(false);
+    // }, this.await)
   }
   
   handleClick = () => {
@@ -26,15 +26,14 @@ class HomePage extends Component {
   render() {
     return (
       <Fragment>
-        <Container init={!this.props.app.isLoading}
-                   delay={this.await}
+        <Container delay={this.await}
                    styleClass="home-page">
           <div className="text-zone">
             <SpellingBee init={!this.props.app.isLoading}
-                         delay={2300}
+                         delay={this.await}
                          text="Hi,*I'm Tenorio,*web developer" cssClass="blast" tag="h1"/>
             <Transition init={!this.props.app.isLoading}
-                        delay={4600}>
+                        delay={this.await}>
               <h2>Front End Developer / WordPress / Angular JS</h2>
               <a className="flat-button" onClick={this.handleClick}>
                 CONTACT ME

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withRouter } from "react-router";
+import { withRouter, Redirect } from "react-router-dom";
 import {connect} from  'react-redux';
 import {bindActionCreators} from 'redux';
 import { TimelineMax, Power4 } from "gsap/all";
@@ -14,6 +14,25 @@ class Preloader extends Component {
   myTweenEnd = null;
   
   componentDidMount() {
+    this.initAnimations();
+  }
+  
+  componentDidUpdate(prevProps) {
+    if (this.props.app.isLoading && this.props.app.isLoading !== prevProps.app.isLoading) {
+      this.initAnimations();
+      this.myTweenStart.restart();
+      setTimeout(() => {
+        this.props.actions.endRouteChange();
+      }, 2000);
+    } else if (!this.props.app.isLoading && this.props.app.isLoading !== prevProps.app.isLoading) {
+      this.props.history.push(this.props.app.targetRoute);
+    } else if (this.props.location !== prevProps.location) {
+      this.initAnimations();
+      this.myTweenEnd.restart();
+    }
+  }
+  
+  initAnimations = () => {
     this.myTweenStart = new TimelineMax().to(document.querySelector('.container'), 0.4, {
       immediateRender: false,
       opacity: 0.2,
@@ -22,7 +41,7 @@ class Preloader extends Component {
     }).fromTo(this.element, 0.5, {immediateRender: false, x: '-100%', display: 'none', ease: Power4.easeOut}, {
       x: '0%',
       display: 'block'
-    }, 0.3).pause()
+    }, 0.3).pause();
     this.myTweenEnd = new TimelineMax().fromTo(document.querySelector('.container'), 0.5, {
       immediateRender: false,
       opacity: 0,
@@ -31,27 +50,11 @@ class Preloader extends Component {
       x: '100%', onComplete: function () {
       
       }
-    }, 0).pause()
-  
-  }
-  
-  componentDidUpdate(prevProps) {
-    if (this.props.location !== prevProps.location) {
-      this.props.actions.toggleLoading(true);
-      return false;
-    } else if (this.props.app.isLoading) {
-      this.myTweenStart.restart();
-      return false;
-    } else if (!this.props.app.isLoading) {
-      this.myTweenEnd.restart();
-      return false;
-    }
-  }
+    }, 0).pause();
+  };
   
   render() {
-    // let styles = {
-    //   display: this.props.app.isLoading ? 'block' : 'none'
-    // };
+    console.log(this.props.app.targetRoute);
     return (
       <div className="preloader" ref={(ref) => this.element = ref}>
         <div className="inner">

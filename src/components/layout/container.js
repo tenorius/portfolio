@@ -1,8 +1,8 @@
 import React from 'react';
 import './container.css';
 
-const Container = ({ init, children, styleClass }) => (
-  <div className={`container ${styleClass} ${init ? '' : 'hidden'}`}>
+const Container = ({children, styleClass }) => (
+  <div className={`container ${styleClass} `}>
     <span className="tags top-tags">
             &nbsp;&nbsp;&nbsp;&lt;body&gt;
     </span>

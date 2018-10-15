@@ -6,6 +6,14 @@ export const toggleLoading = show => (
   { type: types.TOGGLE_LOADING, show }
 );
 
+export const startRouteChange = route => (
+  { type: types.START_ROUTE_CHANGE, route }
+);
+
+export const endRouteChange = () => (
+  { type: types.END_ROUTE_CHANGE }
+);
+
 // export function getUser(email, password){
 //   return function (dispatch) {
 //     return userApi.getUser(email, password).then(user => {

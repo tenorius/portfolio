@@ -8,23 +8,24 @@ import SpellingBee from "../utils/spellingBee";
 
 
 class AboutPage extends Component {
+  
+  await = 300;
+  
   componentDidMount() {
-    setTimeout(() => {
-      // this.setState({init: true});
-      this.props.actions.toggleLoading(false);
-    }, 2000);
+    // setTimeout(() => {
+    //   // this.setState({init: true});
+    //   this.props.actions.toggleLoading(false);
+    // }, 2000);
   }
 
   render() {
     return (
-      <Container
-        init={!this.props.app.isLoading}
-        delay={2300}
-        styleClass="about-page"
+      <Container delay={this.await}
+                 styleClass="about-page"
       >
         <div className="text-zone">
           <SpellingBee init={!this.props.app.isLoading}
-                       delay={2300}
+                       delay={this.await + 300}
                        text="About me" cssClass="blast" tag="h1"/>
           <p>
             Hi! My name is Rodrigo Tenorio, I'm a graduated computer scientist at Federal University of Pernambuco and
