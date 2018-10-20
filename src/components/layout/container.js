@@ -1,8 +1,8 @@
 import React from 'react';
 import './container.css';
 
-const Container = ({children, styleClass }) => (
-  <div className={`container ${styleClass} `}>
+const Container = ({ children, styleClass, assignRef }) => (
+  <div ref={ref => assignRef(ref)} className={`container ${styleClass} `}>
     <span className="tags top-tags">
             &nbsp;&nbsp;&nbsp;&lt;body&gt;
     </span>

@@ -1,6 +1,6 @@
 export default {
   app: {
-    starting: false,
+    changingRoute: false,
     targetRoute: '/home',
     isLoading: false,
   },

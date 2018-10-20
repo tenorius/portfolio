@@ -17,20 +17,25 @@ class Preloader extends Component {
     this.initAnimations();
   }
   
-  componentDidUpdate(prevProps) {
-    if (this.props.app.isLoading && this.props.app.isLoading !== prevProps.app.isLoading) {
+  shouldComponentUpdate(nextProps) {
+    if (nextProps.app.isLoading && nextProps.app.isLoading !== this.props.app.isLoading) {
       this.initAnimations();
       this.myTweenStart.restart();
       setTimeout(() => {
-        this.props.actions.endRouteChange();
+        nextProps.actions.endRouteChange();
       }, 2000);
-    } else if (!this.props.app.isLoading && this.props.app.isLoading !== prevProps.app.isLoading) {
-      this.props.history.push(this.props.app.targetRoute);
-    } else if (this.props.location !== prevProps.location) {
+    } else if (!nextProps.app.isLoading && nextProps.app.isLoading !== this.props.app.isLoading) {
+      nextProps.history.push(nextProps.app.targetRoute);
+    } else if (nextProps.location !== this.props.location) {
       this.initAnimations();
       this.myTweenEnd.restart();
     }
+    return false;
   }
+  
+  decideAction = () => {
+  
+  };
   
   initAnimations = () => {
     this.myTweenStart = new TimelineMax().to(document.querySelector('.container'), 0.4, {

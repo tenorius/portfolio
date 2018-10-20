@@ -1,32 +1,52 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import TimelineMax from 'gsap/TimelineMax';
+import { Power4 } from 'gsap';
 import * as actions from '../../redux/actions/appActions';
 import Container from '../layout/container';
 import './aboutPage.css';
-import SpellingBee from "../utils/spellingBee";
+import SpellingBee from '../utils/spellingBee';
 
 
 class AboutPage extends Component {
-  
   await = 300;
-  
+
+  container = null;
+
+  initAnimation = null;
+
   componentDidMount() {
-    // setTimeout(() => {
-    //   // this.setState({init: true});
-    //   this.props.actions.toggleLoading(false);
-    // }, 2000);
+    this.initAnimation = new TimelineMax().to(this.container, 3, {
+      immediateRender: false,
+      opacity: 1,
+      ease: Power4.linear,
+    }).pause();
+
+    if (!this.props.app.isLoading) {
+      this.initAnimation.play();
+    }
   }
+
+  assignRef = (ref) => {
+    this.container = ref;
+  };
 
   render() {
     return (
-      <Container delay={this.await}
-                 styleClass="about-page"
+      <Container
+        delay={this.await}
+        styleClass="about-page"
+        assignRef={this.assignRef}
       >
         <div className="text-zone">
-          <SpellingBee init={!this.props.app.isLoading}
-                       delay={this.await + 300}
-                       text="About me" cssClass="blast" tag="h1"/>
+          <SpellingBee
+            init={!this.props.app.isLoading}
+            delay={this.await + 300}
+            text="About me"
+            cssClass="blast"
+            tag="h1"
+          />
           <p>
             Hi! My name is Rodrigo Tenorio, I'm a graduated computer scientist at Federal University of Pernambuco and
             i've been working

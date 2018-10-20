@@ -6,7 +6,7 @@ import Navbar from './components/layout/navbar';
 import Page from './components/layout/page';
 import './components/layout/page.css';
 import HomePage from './components/home/homePage';
-import AboutPage from './components/home/aboutPage';
+import AboutPage from './components/about/aboutPage';
 import Preloader from "./components/layout/preloader";
 
 class App extends Component {
