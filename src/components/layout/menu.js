@@ -1,11 +1,12 @@
-import React from 'react'
-import './menu.css'
-const menu = () => (
-    <a href="" className="menu">
-        <i className="material-icons">
+import React from 'react';
+import './menu.css';
+
+const menu = props => (
+  <a onClick={props.toogleNav} className="menu">
+    <i className="material-icons">
            menu
-        </i>
-    </a>
+    </i>
+  </a>
 );
 
 export default menu;

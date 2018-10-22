@@ -24,6 +24,7 @@ class AboutPage extends Component {
     }).pause();
 
     if (!this.props.app.isLoading) {
+      console.log("starting default animation...");
       this.initAnimation.play();
     }
   }

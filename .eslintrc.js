@@ -7,6 +7,7 @@ module.exports = {
     },
     rules: {
         // "skipBlankLines": 1,
+        "react/prop-types": 0,
         "linebreak-style": 0,
         "react/jsx-filename-extension": 0,
         "react/destructuring-assignment": 0,

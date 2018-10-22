@@ -11,40 +11,48 @@ import SpellingBee from '../utils/spellingBee';
 class HomePage extends Component {
   await = 300;
 
-  container = null;
+  elements = {
+    container: null,
+    button: null,
+    h2: null,
+  };
 
-  button = null;
-
-  h2 = null;
-
-  initAnimation = null;
-
-  buttonAnimation = null;
-
+  animations = {
+    init: null,
+    button: null,
+    h2: null,
+  };
 
   componentDidMount() {
-    this.initAnimation = new TimelineMax().to(this.container, 3, {
+    this.resetAnimations();
+    if (!this.props.app.isLoading) {
+      console.log('starting default animation...');
+      this.animations.init.play();
+    }
+    this.animations.h2.play();
+    this.animations.button.play();
+  }
+
+  resetAnimations = () => {
+    this.animations.init = new TimelineMax().to(this.elements.container, 2, {
       immediateRender: false,
       opacity: 1,
       ease: Power4.linear,
     }).pause();
 
-    this.buttonAnimation = new TimelineLite({ paused: true })
-      .fromTo(this.button, 2, { opacity: 0 }, { opacity: 1 })
-      .to(this.h2, 2, { opacity: 1 });
+    this.animations.button = new TimelineLite({ paused: true, delay: 2 })
+      .fromTo(this.elements.button, 1, { opacity: 0 }, { opacity: 1 });
 
-    if (!this.props.app.isLoading) {
-      this.initAnimation.play();
-      this.buttonAnimation.play();
-    }
-  }
+    this.animations.h2 = new TimelineLite({ paused: true, delay: 2 })
+      .fromTo(this.elements.h2, 1, { opacity: 0 }, { opacity: 1 });
+  };
 
   handleClick = () => {
     // this.setState({init: true});
   };
 
   assignRef = (ref) => {
-    this.container = ref;
+    this.elements.container = ref;
   };
 
   render() {
@@ -63,8 +71,8 @@ class HomePage extends Component {
               cssClass="blast"
               tag="h1"
             />
-            <h2 ref={(ref) => { this.h2 = ref; }}>Front End Developer / WordPress / Angular JS</h2>
-            <a ref={(ref) => { this.button = ref; }} className="flat-button" onClick={this.handleClick}>
+            <h2 ref={(ref) => { this.elements.h2 = ref; }}>Front End Developer / WordPress / Angular JS</h2>
+            <a ref={(ref) => { this.elements.button = ref; }} className="flat-button" onClick={this.handleClick}>
               CONTACT ME
             </a>
           </div>

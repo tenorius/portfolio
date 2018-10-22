@@ -2,6 +2,10 @@ import * as types from './actionTypes';
 // import userApi from '../../api/mockUserApi';
 
 
+export const toggleNavbar = () => (
+  { type: types.TOGGLE_NAVBAR }
+);
+
 export const toggleLoading = show => (
   { type: types.TOGGLE_LOADING, show }
 );

@@ -3,5 +3,6 @@ export default {
     changingRoute: false,
     targetRoute: '/home',
     isLoading: false,
+    showNavBar: false,
   },
 };

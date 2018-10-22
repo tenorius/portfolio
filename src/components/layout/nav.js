@@ -2,7 +2,7 @@ import React from 'react';
 import './nav.css';
 
 const Nav = props => (
-  <nav className="nav">
+  <nav className={`nav ${props.show ? 'show' : ''}`}>
     <a onClick={() => (props.goTo('/home'))}>
       <i className="material-icons">
         home

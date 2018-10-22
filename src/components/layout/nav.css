@@ -1,4 +1,6 @@
 .nav {
+    left:100%;
+    opacity: 0;
     text-align: center;
     display: block;
     height: 60px;
@@ -6,6 +8,12 @@
     position: fixed;
     top: 60px;
     background: #181818;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav.show {
+    left: 0;
+    opacity: 1;
 }
 
 .nav a {
