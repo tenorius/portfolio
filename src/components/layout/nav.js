@@ -13,7 +13,7 @@ const Nav = props => (
         person
       </i>
     </a>
-    <a href="/">
+    <a onClick={() => (props.goTo('/skills'))}>
       <i className="material-icons">
         settings
       </i>

@@ -7,6 +7,7 @@ import Page from './components/layout/page';
 import './components/layout/page.css';
 import HomePage from './components/home/homePage';
 import AboutPage from './components/about/aboutPage';
+import SkillsPage from './components/skills/skillsPage';
 import Preloader from "./components/layout/preloader";
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
           <Switch>
             <Route path="/home" component={HomePage} />
             <Route path="/about" component={AboutPage} />
+            <Route path="/skills" component={SkillsPage} />
             <Redirect from="/" to="/home" />
           </Switch>
         </Page>
