@@ -22,7 +22,7 @@ class Navbar extends Component {
   render() {
     return (
       <div className="navbar">
-        <Logo />
+        <Logo width="57px" height="57px" />
         <Nav goTo={this.goTo} show={this.props.app.showNavBar} />
         <Menu toogleNav={this.toogleNav} />
       </div>

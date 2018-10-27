@@ -1,5 +1,6 @@
 .tags {
-    color: #515152;
+    color: #ffa800;
+    opacity: 0.3;
     position: absolute;
     font-size: 18px;
     font-family: 'La Belle Aurore', cursive;
@@ -33,8 +34,9 @@
 }
 .text-zone h1:before{
     content: "<h1>";
+    opacity: 0.3;
     position: absolute;
-    color: #515152;
+    color: #ffa800;
     font-size: 18px;
     margin-top: -35px;
     font-family: 'La Belle Aurore', cursive;

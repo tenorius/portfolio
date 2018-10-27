@@ -38,7 +38,9 @@ class Preloader extends Component {
   }
 
   initAnimations = () => {
-    this.myTweenStart = new TimelineMax().to(document.querySelector('.container'), 0.4, {
+    const container = document.querySelector('.container');
+    const bg = document.querySelector('.bg');
+    this.myTweenStart = new TimelineMax().to([container, bg], 0.4, {
       immediateRender: false,
       opacity: 0.2,
       scale: 0.85,
@@ -47,7 +49,7 @@ class Preloader extends Component {
       x: '0%',
       display: 'block',
     }, 0.3).pause();
-    this.myTweenEnd = new TimelineMax().fromTo(document.querySelector('.container'), 0.5, {
+    this.myTweenEnd = new TimelineMax().fromTo([container, bg], 0.5, {
       immediateRender: false,
       opacity: 0,
       scale: 0.85,
@@ -64,7 +66,7 @@ class Preloader extends Component {
     return (
       <div className="preloader" ref={ref => this.element = ref}>
         <div className="inner">
-          {/*<Logo />*/}
+          <Logo width="57px" height="57px" />
           <span>Tenorio is thinking</span>
           <div className="progress" />
         </div>

@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { TimelineMax, TimelineLite, CSSPlugin, Power4 } from 'gsap';
+import { TimelineMax, TimelineLite, Power4 } from 'gsap';
 import * as actions from '../../redux/actions/appActions';
 import Container from '../layout/container';
 import Background from '../layout/background';
@@ -12,6 +12,7 @@ class HomePage extends Component {
   await = 300;
 
   elements = {
+    background: null,
     container: null,
     button: null,
     h2: null,
@@ -24,17 +25,11 @@ class HomePage extends Component {
   };
 
   componentDidMount() {
-    this.resetAnimations();
-    if (!this.props.app.isLoading) {
-      console.log('starting default animation...');
-      this.animations.init.play();
-    }
-    this.animations.h2.play();
-    this.animations.button.play();
+    this.handleAnimations();
   }
 
   resetAnimations = () => {
-    this.animations.init = new TimelineMax().to(this.elements.container, 2, {
+    this.animations.init = new TimelineMax().to([this.elements.container, this.elements.background], 2, {
       immediateRender: false,
       opacity: 1,
       ease: Power4.linear,
@@ -47,12 +42,22 @@ class HomePage extends Component {
       .fromTo(this.elements.h2, 1, { opacity: 0 }, { opacity: 1 });
   };
 
+  handleAnimations = () => {
+    this.resetAnimations();
+    if (!this.props.app.isLoading) {
+      console.log('starting default animation...');
+      this.animations.init.play();
+    }
+    this.animations.h2.play();
+    this.animations.button.play();
+  };
+
   handleClick = () => {
     // this.setState({init: true});
   };
 
-  assignRef = (ref) => {
-    this.elements.container = ref;
+  assignRef = (ref, element) => {
+    this.elements[element] = ref;
   };
 
   render() {
@@ -77,7 +82,7 @@ class HomePage extends Component {
             </a>
           </div>
         </Container>
-        <Background />
+        <Background assignRef={this.assignRef} />
       </Fragment>
     );
   }

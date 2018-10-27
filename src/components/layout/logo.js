@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './logo.css';
-import { TimelineMax, draw } from 'gsap';
+import { TimelineMax, drawSVG } from 'gsap';
 
 class logo extends Component {
   tl = null;
@@ -70,7 +70,7 @@ class logo extends Component {
 
   render() {
     return (
-      <a href="/" className="logo">
+      <a href="/" className="logo" style={{ width: this.props.width, height: this.props.height, opacity: this.props.opacity }}>
         <svg viewBox="0 0 196 200" width="100%" height="auto">
           <title>t logo</title>
           <g style={{ zIndex: 3, opacity: 0 }}>
