@@ -18,7 +18,7 @@ const Nav = props => (
         settings
       </i>
     </a>
-    <a href="/">
+    <a onClick={() => (props.goTo('/gallery'))}>
       <i className="material-icons">
         album
       </i>

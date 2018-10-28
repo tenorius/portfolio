@@ -8,7 +8,8 @@ import './components/layout/page.css';
 import HomePage from './components/home/homePage';
 import AboutPage from './components/about/aboutPage';
 import SkillsPage from './components/skills/skillsPage';
-import Preloader from "./components/layout/preloader";
+import GalleryPage from './components/gallery/galleryPage';
+import Preloader from './components/layout/preloader';
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
             <Route path="/home" component={HomePage} />
             <Route path="/about" component={AboutPage} />
             <Route path="/skills" component={SkillsPage} />
+            <Route path="/gallery" component={GalleryPage} />
             <Redirect from="/" to="/home" />
           </Switch>
         </Page>

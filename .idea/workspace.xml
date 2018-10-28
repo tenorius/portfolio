@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac21dda0-9931-4f03-9886-d3b959d9888c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/js/tagcanvas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/skills/skillsPage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/skills/skillsPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/utils/skillsCanvas.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/utils/skillsCanvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/pic1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/js/DrawSVGPlugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/js/magicwall.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/gallery/galleryPage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/gallery/galleryPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/background.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/background.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/logo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/nav.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -36,19 +39,19 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="44" />
+          <entry key="css" value="45" />
           <entry key="html" value="1" />
-          <entry key="js" value="91" />
+          <entry key="js" value="104" />
           <entry key="json" value="4" />
           <entry key="svg" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="44" />
+          <entry key="CSS" value="45" />
           <entry key="HTML" value="1" />
           <entry key="JSON" value="4" />
-          <entry key="JavaScript" value="91" />
+          <entry key="JavaScript" value="104" />
           <entry key="SVG" value="1" />
         </counts>
       </usages-collector>
@@ -59,21 +62,21 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="1666" />
+          <entry key="css" value="1717" />
           <entry key="html" value="28" />
-          <entry key="js" value="9919" />
+          <entry key="js" value="10488" />
           <entry key="json" value="5" />
           <entry key="svg" value="7" />
-          <entry key="txt" value="172" />
+          <entry key="txt" value="185" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="1666" />
+          <entry key="CSS" value="1717" />
           <entry key="HTML" value="28" />
           <entry key="JSON" value="5" />
-          <entry key="JavaScript" value="9919" />
-          <entry key="PLAIN_TEXT" value="172" />
+          <entry key="JavaScript" value="10488" />
+          <entry key="PLAIN_TEXT" value="185" />
           <entry key="SVG" value="7" />
         </counts>
       </usages-collector>
@@ -82,40 +85,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/layout/container.js">
+        <entry file="file://$PROJECT_DIR$/src/assets/js/magicwall.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="44" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="44" />
+            <state relative-caret-position="27">
+              <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/about/aboutPage.css">
+        <entry file="file://$PROJECT_DIR$/src/components/gallery/galleryPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="23" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/skills/skillsPage.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/skills/skillsPage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="36" column="23" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="23" />
+            <state relative-caret-position="-1123">
+              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -124,40 +109,52 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/utils/skillsCanvas.js">
+        <entry file="file://$PROJECT_DIR$/src/components/gallery/galleryPage.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+            <state relative-caret-position="1035">
+              <caret line="69" column="29" lean-forward="true" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/home/homePage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="830">
+              <caret line="74" column="19" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#51#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/utils/skillsCanvas.css">
+        <entry file="file://$PROJECT_DIR$/src/components/skills/skillsPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+            <state relative-caret-position="460">
+              <caret line="58" column="4" lean-forward="true" selection-start-line="44" selection-start-column="2" selection-end-line="58" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/assets/js/tagcanvas.js">
+        <entry file="file://$PROJECT_DIR$/src/components/layout/preloader.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+            <state relative-caret-position="-108">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/about/aboutPage.js">
+        <entry file="file://$PROJECT_DIR$/src/assets/js/DrawSVGPlugin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="68" column="18" lean-forward="true" selection-start-line="37" selection-start-column="6" selection-end-line="68" selection-end-column="18" />
+            <state relative-caret-position="30">
+              <caret line="13" column="15" selection-start-line="13" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -165,8 +162,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+            <state relative-caret-position="180">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -174,8 +174,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/layout/nav.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+            <state relative-caret-position="285">
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -202,6 +202,7 @@
       <find>Logo</find>
       <find>tl</find>
       <find>about-page</find>
+      <find>this.tlto</find>
       <find>HomePage</find>
     </findStrings>
     <replaceStrings>
@@ -214,6 +215,8 @@
       <replace>this.tl</replace>
       <replace>skills-page</replace>
       <replace>SkillsPage</replace>
+      <replace>this.tl.to</replace>
+      <replace>GalleryPage</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/components</dir>
@@ -226,12 +229,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/menu.js" />
-        <option value="$PROJECT_DIR$/src/components/layout/page.css" />
-        <option value="$PROJECT_DIR$/src/components/layout/page.js" />
-        <option value="$PROJECT_DIR$/src/components/layout/navbar.css" />
-        <option value="$PROJECT_DIR$/src/components/home/home.js" />
-        <option value="$PROJECT_DIR$/src/normalize.css" />
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/components/home/background.css" />
         <option value="$PROJECT_DIR$/src/components/home/aboutPage.css" />
@@ -261,22 +258,28 @@
         <option value="$PROJECT_DIR$/src/components/layout/logo.svg" />
         <option value="$PROJECT_DIR$/src/components/layout/navbar.js" />
         <option value="$PROJECT_DIR$/src/components/layout/logo.css" />
-        <option value="$PROJECT_DIR$/src/components/layout/logo.js" />
         <option value="$PROJECT_DIR$/src/main.css" />
         <option value="$PROJECT_DIR$/src/components/about/aboutPage.css" />
-        <option value="$PROJECT_DIR$/src/components/layout/preloader.js" />
         <option value="$PROJECT_DIR$/src/components/layout/background.css" />
         <option value="$PROJECT_DIR$/src/components/layout/container.js" />
-        <option value="$PROJECT_DIR$/src/components/layout/background.js" />
         <option value="$PROJECT_DIR$/src/components/home/homePage.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/components/layout/nav.js" />
         <option value="$PROJECT_DIR$/src/components/skills/skillsPage.css" />
         <option value="$PROJECT_DIR$/src/assets/js/tagcanvas.js" />
         <option value="$PROJECT_DIR$/src/components/utils/tagCanvas.js" />
         <option value="$PROJECT_DIR$/src/components/utils/skillsCanvas.css" />
         <option value="$PROJECT_DIR$/src/components/skills/skillsPage.js" />
         <option value="$PROJECT_DIR$/src/components/utils/skillsCanvas.js" />
+        <option value="$PROJECT_DIR$/src/assets/js/SVG.min.js" />
+        <option value="$PROJECT_DIR$/node_modules/gsap/SVG.min.js" />
+        <option value="$PROJECT_DIR$/src/components/layout/preloader.js" />
+        <option value="$PROJECT_DIR$/src/assets/js/DrawSVGPlugin.js" />
+        <option value="$PROJECT_DIR$/src/components/layout/background.js" />
+        <option value="$PROJECT_DIR$/src/components/layout/logo.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/components/layout/nav.js" />
+        <option value="$PROJECT_DIR$/src/assets/js/magicwall.js" />
+        <option value="$PROJECT_DIR$/src/components/gallery/galleryPage.js" />
+        <option value="$PROJECT_DIR$/src/components/gallery/galleryPage.css" />
       </list>
     </option>
   </component>
@@ -350,7 +353,7 @@
               <item name="tenor-io" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="about" type="462c0819:PsiDirectoryNode" />
+              <item name="gallery" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tenor-io" type="b2602c69:ProjectViewProjectNode" />
@@ -364,20 +367,14 @@
               <item name="tenor-io" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="skills" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tenor-io" type="b2602c69:ProjectViewProjectNode" />
               <item name="tenor-io" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tenor-io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tenor-io" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="redux" type="462c0819:PsiDirectoryNode" />
+              <item name="skills" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -403,16 +400,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/img" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/node_modules/gsap" />
       <recent name="$PROJECT_DIR$/src/components/about" />
       <recent name="$PROJECT_DIR$/src/redux/store" />
-      <recent name="$PROJECT_DIR$/src/components/layout" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/img" />
+      <recent name="$PROJECT_DIR$/src/assets/js" />
       <recent name="$PROJECT_DIR$/src/components/skills" />
       <recent name="$PROJECT_DIR$/src/redux/actions" />
       <recent name="$PROJECT_DIR$/src/redux/reducers" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -448,7 +447,7 @@
       <workItem from="1540325922930" duration="1278000" />
       <workItem from="1540419082845" duration="1021000" />
       <workItem from="1540490950367" duration="3457000" />
-      <workItem from="1540599215848" duration="5444000" />
+      <workItem from="1540599215848" duration="12397000" />
     </task>
     <task id="LOCAL-00001" summary="spellingBee&#10;aboutpage">
       <created>1539407698917</created>
@@ -499,17 +498,24 @@
       <option name="project" value="LOCAL" />
       <updated>1540615242435</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="pagina skills">
+      <created>1540620963989</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1540620963989</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101384000" />
+    <option name="totallyTimeSpent" value="108337000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17829457" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.39534885" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -553,7 +559,8 @@
     <MESSAGE value="versao estavel" />
     <MESSAGE value="versao instavel com logo" />
     <MESSAGE value="versao estavel com logo e animacoes" />
-    <option name="LAST_COMMIT_MESSAGE" value="versao estavel com logo e animacoes" />
+    <MESSAGE value="pagina skills" />
+    <option name="LAST_COMMIT_MESSAGE" value="pagina skills" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -746,16 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/layout/logo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1065">
-          <caret line="73" column="61" selection-start-line="73" selection-start-column="61" selection-end-line="73" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/layout/logo.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -791,50 +788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/layout/background.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/layout/preloader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="41" column="22" selection-start-line="41" selection-end-line="42" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/home/homePage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="44" column="2" selection-start-line="44" selection-start-column="2" selection-end-line="52" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/layout/nav.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/layout/container.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -852,13 +805,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/about/aboutPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="68" column="18" lean-forward="true" selection-start-line="37" selection-start-column="6" selection-end-line="68" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/skills/skillsPage.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -866,10 +812,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/js/tagcanvas.js">
+    <entry file="file://$PROJECT_DIR$/src/components/utils/skillsCanvas.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        <state relative-caret-position="90">
+          <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -880,23 +829,125 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/gsap/DrawSVGPlugin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="88" column="4" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/js/tagcanvas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="18" selection-start-line="21" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layout/preloader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-108">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layout/logo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/js/DrawSVGPlugin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="13" column="15" selection-start-line="13" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layout/nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/about/aboutPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="68" column="18" selection-start-line="37" selection-start-column="6" selection-end-line="68" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layout/background.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/skills/skillsPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="36" column="23" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="23" />
+        <state relative-caret-position="460">
+          <caret line="58" column="4" lean-forward="true" selection-start-line="44" selection-start-column="2" selection-end-line="58" selection-end-column="4" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/utils/skillsCanvas.js">
+    <entry file="file://$PROJECT_DIR$/src/components/home/homePage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+        <state relative-caret-position="830">
+          <caret line="74" column="19" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#51#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/js/magicwall.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/gallery/galleryPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1123">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/gallery/galleryPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="69" column="29" lean-forward="true" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
         </state>
       </provider>
     </entry>
