@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import WebFont from 'webfontloader';
 import { Provider } from 'react-redux';
-import configureStore from './redux/store/configureStore';
+import store from './store';
 import './index.css';
+import './main.css';
 import './normalize.css';
-import App from './App';
-import initialState from './redux/reducers/initialState';
+import App from './modules/common/index';
 import * as serviceWorker from './serviceWorker';
 
 WebFont.load({
@@ -15,8 +15,6 @@ WebFont.load({
     families: ['Material Icons'],
   },
 });
-
-const store = configureStore(initialState);
 
 ReactDOM.render(
   <Provider store={store}>

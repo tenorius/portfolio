@@ -1,22 +1,3 @@
-.tags {
-    color: #ffa800;
-    opacity: 0.3;
-    position: absolute;
-    font-size: 18px;
-    font-family: 'La Belle Aurore', cursive;
-    left: 0;
-    margin-left: 10px;
-}
-.tags.top-tags {
-    top: 76px;
-
-}
-.tags.bottom-tags {
-    bottom: 0px;
-}
-
-/*text-zone*/
-
 .text-zone {
     width: 85%;
     margin-top: 170px;
