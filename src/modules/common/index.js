@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import Layout from './views/layout';
+import { Route, Switch } from 'react-router-dom';
+
 
 class Index extends Component {
   render() {
     return (
-      <Layout />
+      <Switch>
+        <Route path="/" component={Layout} />
+      </Switch>
     );
   }
 }

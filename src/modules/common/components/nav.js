@@ -39,22 +39,22 @@ Styled.wrapper = styled.div`
 
 const Nav = ({ stateGo, showNavbar }) => (
   <Styled.wrapper showNavbar={showNavbar}>
-    <a href="" onClick={() => (stateGo('/home'))}>
+    <a  onClick={() => (stateGo('/home'))}>
       <i className="material-icons">
         home
       </i>
     </a>
-    <a href="" onClick={() => (stateGo('/about'))}>
+    <a  onClick={() => (stateGo('/about'))}>
       <i className="material-icons">
         person
       </i>
     </a>
-    <a href="" onClick={() => (stateGo('/skills'))}>
+    <a  onClick={() => (stateGo('/skills'))}>
       <i className="material-icons">
         settings
       </i>
     </a>
-    <a href="" onClick={() => (stateGo('/gallery'))}>
+    <a  onClick={() => (stateGo('/gallery'))}>
       <i className="material-icons">
         album
       </i>

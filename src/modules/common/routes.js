@@ -1,13 +1,12 @@
 import React from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
-import HomePage from '../home/index';
+import Home from '../home/index';
+import Skills from '../skills/index';
 
 const Routes = () => (
   <Switch>
-    <Route path="/home" component={HomePage} />
-    {/* <Route path="/about" component={AboutPage} /> */}
-    {/* <Route path="/skills" component={SkillsPage} /> */}
-    {/* <Route path="/gallery" component={GalleryPage} /> */}
+    <Route path="/home" exact component={Home} />
+    <Route path="/skills" exact component={Skills} />
     <Redirect from="/" to="/home" />
   </Switch>
 );

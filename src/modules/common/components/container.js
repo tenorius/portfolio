@@ -14,7 +14,7 @@ Styled.wrapper = styled.div`
   z-index: 1;
 `;
 const Container = ({ children, styleClass, assignRef }) => (
-  <div ref={ref => assignRef(ref, 'container')} className={`container ${styleClass} `}>
+  <Styled.wrapper id="container" ref={ref => assignRef(ref, 'container')} className={`container ${styleClass} `}>
     <Tags position="top">
       &nbsp;&nbsp;&nbsp;&lt;body&gt;
     </Tags>
@@ -24,7 +24,7 @@ const Container = ({ children, styleClass, assignRef }) => (
       <br />
       &lt;/html&gt;
     </Tags>
-  </div>
+  </Styled.wrapper>
 );
 
 export default Container;

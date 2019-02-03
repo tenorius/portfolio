@@ -44,7 +44,6 @@ class Home extends Component {
   handleAnimations = () => {
     this.resetAnimations();
     if (!this.props.app.isLoading) {
-      console.log('starting default animation...');
       this.animations.init.play();
     }
     this.animations.h2.play();

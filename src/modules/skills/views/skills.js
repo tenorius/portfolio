@@ -1,30 +1,33 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { TimelineMax, TimelineLite, Power4 } from 'gsap';
-import * as actions from '../../redux/actions/appActions';
-import Container from '../layout/container';
-import '../../assets/js/tagcanvas';
-import SkillsCanvas from '../utils/skillsCanvas';
-import Background from '../layout/background';
-import SpellingBee from '../utils/spellingBee';
-import './skillsPage.css';
+import { TimelineMax, Power4 } from 'gsap';
+import styled from 'styled-components';
+import { actions } from '../../common/ducks/index';
+import Container from '../../common/components/container';
+import '../../../assets/js/tagcanvas';
+import SkillsCanvas from '../../common/utils/skillsCanvas';
+import SpellingBee from '../../common/utils/spellingBee';
+import '../skillsPage.css';
+import TextZone from '../../common/components/textzone';
 
+const MyTextZone = styled(TextZone)`
+  h1{
+    color: #edc000;
+    position: relative;
+    margin-bottom: 40px;
+  }
+`;
 
-class SkillsPage extends Component {
+class Skills extends Component {
   await = 300;
 
   elements = {
-    background: null,
     container: null,
-    button: null,
-    h2: null,
   };
 
   animations = {
     init: null,
-    button: null,
-    h2: null,
   };
 
   componentDidMount() {
@@ -38,12 +41,12 @@ class SkillsPage extends Component {
       textHeight: 20,
       depth: 0.99,
       initial: [0.1, 0.1],
-    }
+    };
     window.TagCanvas.Start('myCanvas', null, options);
   };
 
   prepareAnimations = () => {
-    this.initAnimation = new TimelineMax().to(this.elements.container, 3, {
+    this.animations.init = new TimelineMax().to(this.elements.container, 3, {
       immediateRender: false,
       opacity: 1,
       ease: Power4.linear,
@@ -53,13 +56,8 @@ class SkillsPage extends Component {
   handleAnimations = () => {
     this.prepareAnimations();
     if (!this.props.app.isLoading) {
-      console.log('starting default animation...');
-      this.initAnimation.play();
+      this.animations.init.play();
     }
-  };
-
-  handleClick = () => {
-    // this.setState({init: true});
   };
 
   assignRef = (ref, element) => {
@@ -73,7 +71,7 @@ class SkillsPage extends Component {
         styleClass="skills-page"
         assignRef={this.assignRef}
       >
-        <div className="text-zone">
+        <MyTextZone>
           <SpellingBee
             init={!this.props.app.isLoading}
             delay={this.await + 300}
@@ -94,14 +92,14 @@ class SkillsPage extends Component {
           <p>
             Thats when i went to work at Accenture, as a Front-End developer. There I found my true passion.
           </p>
-        </div>
+        </MyTextZone>
         <SkillsCanvas />
       </Container>
     );
   }
 }
 
-const mapStateToProps = (state, ownProps) => ({
+const mapStateToProps = state => ({
   app: state.app,
 });
 
@@ -109,4 +107,4 @@ const mapDispatchToProps = dispatch => ({
   actions: bindActionCreators(actions, dispatch),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(SkillsPage);
+export default connect(mapStateToProps, mapDispatchToProps)(Skills);

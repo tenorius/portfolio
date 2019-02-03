@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { bindActionCreators, compose } from 'redux';
-import { withRouter } from 'react-router-dom';
 import connect from 'react-redux/es/connect/connect';
 import { actions } from '../ducks/index';
 import Routes from '../routes';
@@ -17,20 +16,17 @@ class Layout extends Component {
     this.props.actions.startRouteChange(route);
   };
 
-  toogleNavbar = () => {
-    this.setState(prevState => ({ showNavbar: !prevState.showNavBar }));
+  toggleNavbar = () => {
+    this.setState(prevState => ({ showNavbar: !prevState.showNavbar }));
   };
-  
-  assignRef = (ref, element) => {
-    this.elements[element] = ref;
-  };
+
   render() {
     const {
       showNavbar,
     } = this.state;
     return (
       <div>
-        <Navbar showNavbar={showNavbar} toogleNavbar={this.toogleNavbar} />
+        <Navbar showNavbar={showNavbar} toggleNavbar={this.toggleNavbar} stateGo={this.stateGo} />
         <Page>
           <Routes />
         </Page>
@@ -48,7 +44,4 @@ const mapDispatchToProps = dispatch => ({
   actions: bindActionCreators(actions, dispatch),
 });
 
-export default compose(
-  connect(mapStateToProps, mapDispatchToProps),
-  withRouter,
-)(Layout);
+export default connect(mapStateToProps, mapDispatchToProps)(Layout);

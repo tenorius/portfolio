@@ -57,8 +57,6 @@ const reducer = (state = initialState, action) => {
       };
     case types.END_ROUTE_CHANGE:
       return { ...state, isLoading: false };
-    case types.SAVE_REF:
-      return { ...state, refs: { ...state.refs, [action.name]: action.ref } };
     default:
       return state;
   }
