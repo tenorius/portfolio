@@ -1,15 +1,24 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import TimelineMax from 'gsap/TimelineMax';
 import { Power4 } from 'gsap';
-import * as actions from '../../redux/actions/appActions';
-import Container from '../layout/container';
-import './aboutPage.css';
-import SpellingBee from '../utils/spellingBee';
+import { actions } from '../../common/ducks/index';
+import Container from '../../common/components/container';
+import SpellingBee from '../../common/utils/spellingBee';
+import TextZone from '../../common/components/textzone';
+
+const MyTextZone = styled(TextZone)`
+  h1{
+    color: #edc000;
+    position: relative;
+    margin-bottom: 40px;
+  }
+`;
 
 
-class AboutPage extends Component {
+class About extends Component {
   await = 300;
 
   container = null;
@@ -24,7 +33,6 @@ class AboutPage extends Component {
     }).pause();
 
     if (!this.props.app.isLoading) {
-      console.log("starting default animation...");
       this.initAnimation.play();
     }
   }
@@ -40,7 +48,7 @@ class AboutPage extends Component {
         styleClass="about-page"
         assignRef={this.assignRef}
       >
-        <div className="text-zone">
+        <MyTextZone>
           <SpellingBee
             init={!this.props.app.isLoading}
             delay={this.await + 300}
@@ -65,7 +73,7 @@ class AboutPage extends Component {
             being able to be creative working with designer to achieve better user experiences to my clients
             and be really productive using modern Js frameworks.
           </p>
-        </div>
+        </MyTextZone>
       </Container>
     );
   }
@@ -79,4 +87,4 @@ const mapDispatchToProps = dispatch => ({
   actions: bindActionCreators(actions, dispatch),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(AboutPage);
+export default connect(mapStateToProps, mapDispatchToProps)(About);

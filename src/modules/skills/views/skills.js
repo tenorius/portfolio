@@ -8,7 +8,6 @@ import Container from '../../common/components/container';
 import '../../../assets/js/tagcanvas';
 import SkillsCanvas from '../../common/utils/skillsCanvas';
 import SpellingBee from '../../common/utils/spellingBee';
-import '../skillsPage.css';
 import TextZone from '../../common/components/textzone';
 
 const MyTextZone = styled(TextZone)`

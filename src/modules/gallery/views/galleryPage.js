@@ -4,10 +4,10 @@ import { bindActionCreators } from 'redux';
 import $ from 'jquery';
 import TimelineMax from 'gsap/TimelineMax';
 import { Power4 } from 'gsap';
-import * as actions from '../../redux/actions/appActions';
-import Container from '../layout/container';
-import '../../assets/js/magicwall';
-import pic from '../../assets/img/pic1.jpg';
+import { actions } from '../../common/ducks/index';
+import Container from '../../common/components/container';
+import '../../../assets/js/magicwall';
+import pic from '../../../assets/img/pic1.jpg';
 import './galleryPage.css';
 
 
@@ -86,6 +86,14 @@ class GalleryPage extends Component {
         >
           <div className="magicwall">
             <ul className="magicwall-grid">
+              <li data-thumb={pic} />
+              <li data-thumb={pic} />
+              <li data-thumb={pic} />
+              <li data-thumb={pic} />
+              <li data-thumb={pic} />
+              <li data-thumb={pic} />
+              <li data-thumb={pic} />
+              <li data-thumb={pic} />
               <li data-thumb={pic} />
               <li data-thumb={pic} />
               <li data-thumb={pic} />

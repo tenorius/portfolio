@@ -69,15 +69,18 @@ class logo extends Component {
     this.animations.code.to([lines[6], lines[7], lines[8], lines[9]], interval / 0.75, { y: 42 }, `-=${interval / 0.75}`);
 
 
-    this.animations.code.play();
+    // this.animations.code.play();
     // this.animations.codefromTo(circle, 0.3,{x:"0"}, {x:"33"}, '-=0.9')
     // .to(circle, 0.3, {x:"66"}, '-=0.6')
     // .to(circle, 0.3, {x:"100"}, '-=0.3').pause()
 
     this.animations.cursor.fromTo(lines2, 0.2, { 'stroke-opacity': 1 }, { 'stroke-opacity': 0.5 });
 
-    this.animations.code.restart();
-    this.animations.cursor.restart();
+    this.animations.code.delay(2);
+    this.animations.cursor.delay(0);
+
+    this.animations.code.play();
+    this.animations.cursor.play();
   };
 
   render() {

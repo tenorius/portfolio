@@ -50,9 +50,14 @@ li.magicwall-grid-item{
 }
 
 .magicwall {
-    position: relative;
     display: block;
-
+    margin-top: 60px;
+    position: absolute;
+    min-height: 1200px;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    padding-bottom: 58px;
 }
 
 .magicwall.magicwall-loading:before {
@@ -81,7 +86,7 @@ li.magicwall-grid-item{
     margin: 0;
     width: 100%;
     height: 100%;
-    margin-left: 60px;
+    /*margin-left: 60px;*/
     position: absolute;
     top: 0;
     left: 0;
